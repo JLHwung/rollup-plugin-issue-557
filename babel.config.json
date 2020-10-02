@@ -1,0 +1,11 @@
+{
+    "presets": [["@babel/preset-env", { "targets": "defaults" }]],
+    "overrides": [
+        {
+            // sourceType: 'unambiguous' breaks @rollup/plugin-babel"
+            // vscode: easy, Babel supports JSON5
+            "test": "**/node_modules",
+            "sourceType": "unambiguous"
+        }
+    ]
+}
